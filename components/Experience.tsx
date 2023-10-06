@@ -12,10 +12,12 @@ const Experience = () => {
   return (
     <section id="experience">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              visible={true}
               contentStyle={{
                 background: '#f3f4f6',
                 boxShadow: 'none',
