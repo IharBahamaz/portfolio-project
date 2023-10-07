@@ -4,6 +4,7 @@ import SectionHeading from './SectionHeading';
 import { FaPaperPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import useSectionInView from '@/hooks/useSectionInView';
+import sendEmail from '@/actions/sendEmail';
 
 const Contact = () => {
   const { ref } = useSectionInView('Contact');
@@ -37,11 +38,11 @@ const Contact = () => {
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          console.log(formData);
+          await sendEmail(formData);
         }}
       >
         <input
-          name="sender"
+          name="senderEmail"
           type="email"
           required
           maxLength={500}
