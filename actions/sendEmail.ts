@@ -1,33 +1,31 @@
 'use server';
-
 import { Resend } from 'resend';
-import { validateString, getErrorMessage } from '@/lib/utils';
+import { getErrorMessage, validateString } from '@/lib/utils';
 import ContactFormEmail from '@/email/ContactFormEmail';
 import React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const sendEmail = async (formData: FormData) => {
+export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail');
   const message = formData.get('message');
 
+  // simple server side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: 'Invalid sender email',
     };
   }
-
   if (!validateString(message, 5000)) {
     return {
       error: 'Invalid message',
     };
   }
 
-  let data;
   try {
-    data = await resend.emails.send({
+    await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
-      to: 'codeoffantasy@gmail.com',
+      to: 'illusoryedoc@gmail.com',
       subject: 'Message from contact form',
       reply_to: senderEmail as string,
       react: React.createElement(ContactFormEmail, {
@@ -35,14 +33,52 @@ const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail as string,
       }),
     });
-  } catch (error: unknown) {
+  } catch (error) {
+    console.error(error);
     return {
       error: getErrorMessage(error),
     };
   }
-  return {
-    data,
-  };
 };
 
-export default sendEmail;
+// const resend = new Resend(process.env.RESEND_API_KEY);
+
+// const sendEmail = async (formData: FormData) => {
+//   const senderEmail = formData.get('senderEmail');
+//   const message = formData.get('message');
+
+//   if (!validateString(senderEmail, 500)) {
+//     return {
+//       error: 'Invalid sender email',
+//     };
+//   }
+
+//   if (!validateString(message, 5000)) {
+//     return {
+//       error: 'Invalid message',
+//     };
+//   }
+
+//   let data;
+//   try {
+//     data = await resend.emails.send({
+//       from: 'Contact Form <onboarding@resend.dev>',
+//       to: 'codeoffantasy@gmail.com',
+//       subject: 'Message from contact form',
+//       reply_to: senderEmail as string,
+//       react: React.createElement(ContactFormEmail, {
+//         message: message as string,
+//         senderEmail: senderEmail as string,
+//       }),
+//     });
+//   } catch (error: unknown) {
+//     return {
+//       error: getErrorMessage(error),
+//     };
+//   }
+//   return {
+//     data,
+//   };
+// };
+
+// export default sendEmail;

@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import { FaPaperPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import useSectionInView from '@/hooks/useSectionInView';
-import sendEmail from '@/actions/sendEmail';
+import { sendEmail } from '@/actions/sendEmail';
+import SubmitBtn from './SubmitBtn';
 
 const Contact = () => {
   const { ref } = useSectionInView('Contact');
@@ -36,7 +36,7 @@ const Contact = () => {
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           await sendEmail(formData);
         }}
@@ -54,16 +54,9 @@ const Contact = () => {
           className="h-52 my-3 rounded-lg borderBlack p-4"
           placeholder="Your message"
           required
-          maxLength={500}
+          maxLength={5000}
         />
-        <button
-          type="submit"
-          className="group flex items-center justify-center  h-[3rem] gap-2 bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 
-          hover:scale-110 active:scale-105 hover:bg-gray-950"
-        >
-          Submit{' '}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
