@@ -10,37 +10,49 @@ const About = () => {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
+      id='about'
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{' '}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{' '}
-        <span className="font-medium">full-stack web development</span>.{' '}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{' '}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{' '}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+      <p className='mb-1'>
+        After dedicating over a year to studying and gaining practical
+        experience, the prospect of collaborating with a team of professional
+        developers greatly excites me.{' '}
+        <span className='font-medium'>My fondness</span>, for technology and
+        programming is rooted in a love for problem-solving and working with
+        both <span className='font-medium'>software and hardware</span>.{' '}
+        <span className='italic'>
+          I enjoy solving complex problems, and micro problems.
+        </span>{' '}
+        I <span className='underline'>love</span> when system start to work
+        correctly and the feeling of finally figuring out a solution to a
+        problem. My core stack is{' '}
+        <span className='font-medium'>React, Next.js, TypeScript</span>. I am
+        also familiar with
+        <span className='font-medium'> Prisma, MySQL/MariDB</span>. I am always
+        looking to learn new technologies, for example Rust & WASM. I am
+        currently looking for a{' '}
+        <span className='font-medium'>full-time position</span> as a Junior
+        Full-stack developer.
       </p>
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and playing with my dog. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning about{' '}
-        <span className="font-medium">history and philosophy</span>. I&apos;m
-        also learning how to play the guitar.
+        <span className='italic'>When not working</span>, my time is filled with
+        various interests and activities. I find relaxation in reading fiction
+        and maintaining a yoga practice, cold exposures & sauna. Staying
+        informed about the latest in technology is a passion, and I enjoy
+        connecting with friends. Setting up{' '}
+        <span className='font-medium'>
+          Arch Linux & DWM, exploring gadgets, hardware
+        </span>
+        and continuous learning are part of my daily routine. I&apos;m
+        particularly excited about learning new technologies like
+        <span className='font-medium'>
+          Rust, WebAssembly, Bun, and MongoDB.
+        </span>{' '}
+        My current studying involves Python, Node.js, Eastern phylosophy.
       </p>
     </motion.section>
   );
