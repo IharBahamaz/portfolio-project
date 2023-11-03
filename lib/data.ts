@@ -63,9 +63,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Interactive Development Environment',
+    title: 'IDE',
     description:
-      'CLI IDE for writing & documenting JS/JSX code. Play with code how you want.Usage just run  npx js-success-note serve',
+      'Writing & documenting JS code. Use show() to show any React comp, str, or num or anything else. Run "npx js-success-note serve test.js" to save data there.',
     tags: ['TypeScript', 'React', 'Redux', 'EsBuild', 'Lerna'],
     externalUrl: 'https://www.npmjs.com/package/js-success-note',
     imageUrl: ide,
