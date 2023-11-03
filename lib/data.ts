@@ -65,8 +65,9 @@ export const projectsData = [
   {
     title: 'Interactive Development Environment',
     description:
-      'CLI IDE for writing & documenting JS/JSX code. Play with code how you want.',
+      'CLI IDE for writing & documenting JS/JSX code. Play with code how you want.Usage just run  npx js-success-note serve',
     tags: ['TypeScript', 'React', 'Redux', 'EsBuild', 'Lerna'],
+    externalUrl: 'https://www.npmjs.com/package/js-success-note',
     imageUrl: ide,
   },
   {
@@ -83,6 +84,7 @@ export const projectsData = [
       'React-hook-form',
       'Zustand',
     ],
+    externalUrl: 'https://illusorygame.vercel.app/',
     imageUrl: gamehub,
   },
   {
@@ -99,6 +101,8 @@ export const projectsData = [
       'React Query',
       'Prisma',
     ],
+    externalUrl: 'https://issue-tracker-seven-xi.vercel.app/',
+
     imageUrl: issuetracker,
   },
 ] as const;
