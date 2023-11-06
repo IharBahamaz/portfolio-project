@@ -2,6 +2,9 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { SiNextdotjs } from 'react-icons/si';
+import { SiJavascript } from 'react-icons/si';
+import { SiFreelancer } from 'react-icons/si';
 
 import ide from '@/public/IDE.png';
 import gamehub from '@/public/gamehub.png';
@@ -36,28 +39,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Frontend project',
+    location: 'Warsaw, Poland',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'We created a Single Page Application for a local taxi service, primarily using vanilla HTML, and CSS.',
     icon: React.createElement(LuGraduationCap),
-    date: '2019',
+    date: 'Sep-Nov 2022',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    title: 'Fronted project',
+    location: 'Warsaw, Poland',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+      'We worked on a SPA for a windows installation shop, primarily using vanilla JS, HTML, and CSS. During this project, we gained proficiency in popular technologies such as AJAX, Git, Babel, Browserify, Webpack, Heroku, FileZilla.',
+    icon: React.createElement(SiJavascript),
+    date: 'Nove-Dev 2022',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Frontend project',
+    location: 'Warsaw, Poland',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "We developed an Interactive Development Environment (IDE) application using React and Typescript. To effectively manage the application's state, we integrated Redux with Typescript, ensuring robust state management. We went a step further by creating a custom esBuild plugin to fetch files from npm, enhancing the development process.",
     icon: React.createElement(FaReact),
-    date: '2021 - present',
+    date: 'Jan-Mar 2023',
+  },
+  {
+    title: 'Frontend project',
+    location: 'Warsaw, Poland',
+    description:
+      'We create a compact React and Typescript web application, serving as a game hub. Implemented forms with React Hook Forms, connected to the backend, and deployed the app on Vercel. Leveraged Immer for logic enhancement and designed the user interface using ChakraUI. Ensured efficient data retrieval and updates through React Query with caching optimization. Managed application state with Zustand and incorporated React Router for routing.',
+    icon: React.createElement(FaReact),
+    date: 'Mar-May 2023',
+  },
+  {
+    title: 'Fullstack project',
+    location: 'Warsaw, Poland',
+    description:
+      "We built an issue tracker app with strong user authentication using Next.js and NextAuth.js. The app is optimized for speed and SEO, deployed on Vercel. For efficient data management, we leveraged ReactQuery and Zustand with RESTful APIs, enhancing data retrieval with TypeScript, Next.js 13+, and React Cache. The front-end design is sleek, employing Tailwind CSS and Radix UI. Data integrity is ensured through Prisma's connection to MySQL/MariaDB databases, and user experience is improved with lazy loading. This project showcases my expertise in creating high-performing, secure, and user-friendly web applications.",
+    icon: React.createElement(SiNextdotjs),
+    date: 'Jul-Sep 2023',
+  },
+  {
+    title: 'Full-stack developer',
+    location: 'Poland',
+    description: 'Freelancer',
+    icon: React.createElement(SiFreelancer),
+    date: 'Nov-present',
   },
 ] as const;
 
@@ -129,7 +155,7 @@ export const skillsData = [
   'React-email',
   'Linux',
   'Rest API',
-  'Reac Router',
+  'React Router',
   'ESBuild',
   'WASM',
   'Lerna',
