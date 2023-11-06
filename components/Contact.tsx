@@ -13,8 +13,8 @@ const Contact = () => {
   return (
     <motion.section
       ref={ref}
-      id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      id='contact'
+      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
       }}
@@ -29,15 +29,15 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6 dark:text-light-white/80">
+      <p className='text-gray-700 -mt-6 dark:text-light-white/80'>
         Please contact me directly at{' '}
-        <a className="underline" href="mailto:example@gmail.com">
-          codeoffantasy@gmail.com
+        <a className='underline' href='mailto:example@gmail.com'>
+          iharbahamaz@mailfence.com
         </a>{' '}
         or through this form.
       </p>
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className='mt-10 flex flex-col dark:text-black'
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -50,17 +50,17 @@ const Contact = () => {
         }}
       >
         <input
-          name="senderEmail"
-          type="email"
+          name='senderEmail'
+          type='email'
           required
           maxLength={500}
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          placeholder="Your email"
+          className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
+          placeholder='Your email'
         />
         <textarea
-          name="message"
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          placeholder="Your message"
+          name='message'
+          className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none'
+          placeholder='Your message'
           required
           maxLength={5000}
         />

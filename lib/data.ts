@@ -1,9 +1,9 @@
 import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
+
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import { SiNextdotjs } from 'react-icons/si';
-import { SiJavascript } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { RiJavascriptLine } from 'react-icons/ri';
 import { SiFreelancer } from 'react-icons/si';
 
 import ide from '@/public/IDE.png';
@@ -51,7 +51,7 @@ export const experiencesData = [
     location: 'Warsaw, Poland',
     description:
       'We worked on a SPA for a windows installation shop, primarily using vanilla JS, HTML, and CSS. During this project, we gained proficiency in popular technologies such as AJAX, Git, Babel, Browserify, Webpack, Heroku, FileZilla.',
-    icon: React.createElement(SiJavascript),
+    icon: React.createElement(RiJavascriptLine),
     date: 'Nove-Dev 2022',
   },
   {
@@ -75,7 +75,7 @@ export const experiencesData = [
     location: 'Warsaw, Poland',
     description:
       "We built an issue tracker app with strong user authentication using Next.js and NextAuth.js. The app is optimized for speed and SEO, deployed on Vercel. For efficient data management, we leveraged ReactQuery and Zustand with RESTful APIs, enhancing data retrieval with TypeScript, Next.js 13+, and React Cache. The front-end design is sleek, employing Tailwind CSS and Radix UI. Data integrity is ensured through Prisma's connection to MySQL/MariaDB databases, and user experience is improved with lazy loading. This project showcases my expertise in creating high-performing, secure, and user-friendly web applications.",
-    icon: React.createElement(SiNextdotjs),
+    icon: React.createElement(TbBrandNextjs),
     date: 'Jul-Sep 2023',
   },
   {
@@ -83,7 +83,7 @@ export const experiencesData = [
     location: 'Poland',
     description: 'Freelancer',
     icon: React.createElement(SiFreelancer),
-    date: 'Nov-present',
+    date: 'Nov 2023 - present',
   },
 ] as const;
 
