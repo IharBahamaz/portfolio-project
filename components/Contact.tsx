@@ -14,7 +14,7 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id='contact'
-      className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
+      className='mb-10 sm:mb-28 w-[min(100%,38rem)] text-center'
       initial={{
         opacity: 0,
       }}
@@ -28,8 +28,8 @@ const Contact = () => {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
-      <p className='text-gray-700 -mt-6 dark:text-light-white/80'>
+      {/* <SectionHeading>Contact me</SectionHeading> */}
+      <p className='text-gray-700 -mt-7 dark:text-light-white/80'>
         Please contact me directly at{' '}
         <a className='underline' href='mailto:example@gmail.com'>
           iharbahamaz@mailfence.com
@@ -37,7 +37,7 @@ const Contact = () => {
         or through this form.
       </p>
       <form
-        className='mt-10 flex flex-col dark:text-black'
+        className='mt-2 flex flex-col dark:text-black'
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
