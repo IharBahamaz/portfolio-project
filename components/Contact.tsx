@@ -29,7 +29,7 @@ const Contact = () => {
       }}
     >
       {/* <SectionHeading>Contact me</SectionHeading> */}
-      <p className='text-gray-700 -mt-7 dark:text-light-white/80'>
+      <p className='text-white-700 -mt-7 dark:text-light-white/80'>
         Please contact me directly at{' '}
         <a className='underline' href='mailto:example@gmail.com'>
           iharbahamaz@mailfence.com
