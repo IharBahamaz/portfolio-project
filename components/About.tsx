@@ -52,7 +52,7 @@ const About = () => {
         <span className='font-medium'>
           Rust, WebAssembly, Bun, and MongoDB.
         </span>{' '}
-        My current studying involves WASM, Rust, MongoDB, GraphQL.
+        My current studying involves Node.js, MongoDB, GraphQL.
       </p>
     </motion.section>
   );
