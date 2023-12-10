@@ -6,6 +6,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { RiJavascriptLine } from 'react-icons/ri';
 import { SiFreelancer } from 'react-icons/si';
 
+import nodenasa from '../public/nodenasa.png';
 import ide from '@/public/IDE.png';
 import gamehub from '@/public/gamehub.png';
 import issuetracker from '@/public/issuetracker.png';
@@ -89,6 +90,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Node.js project',
+    description: 'Mission control panel, just order the launch!',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'AWSEC2', 'Mongoose', 'Docker'],
+    externalUrl: 'http://51.20.129.247:8000/',
+    imageUrl: nodenasa,
+  },
+  {
     title: 'IDE',
     description:
       'Writing & documenting JS code. Use show() to show any React comp, str, or num or anything else. Run "npx js-success-note serve test.js" to save data there.',
@@ -136,6 +144,7 @@ export const projectsData = [
 export const skillsData = [
   'Object-oriented programming',
   'HTML',
+  'Apollo',
   'CSS',
   'JavaScript',
   'TypeScript',

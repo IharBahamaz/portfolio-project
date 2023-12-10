@@ -30,29 +30,26 @@ const About = () => {
         I <span className='underline'>love</span> when system start to work
         correctly and the feeling of finally figuring out a solution to a
         problem. My core stack is{' '}
-        <span className='font-medium'>React, Next.js, TypeScript</span>. I am
-        also familiar with
-        <span className='font-medium'> Prisma, MySQL/MariDB</span>. I am always
+        <span className='font-medium'>
+          JavaScript, Node.js/Express.js, MongoDB,
+        </span>
+        . I am also familiar with
+        <span className='font-medium'> Prisma, TypeScript, </span>. I am always
         looking to learn new technologies, for example Rust & WASM. I am
         currently looking for a{' '}
-        <span className='font-medium'>full-time position</span> as a Junior
-        Full-stack developer.
+        <span className='font-medium'>full-time position</span> as a Full-stack
+        developer with focus on Back End.
       </p>
       <p>
         <span className='italic'>When not working</span>, my time is filled with
         various interests and activities. I find relaxation in reading fiction
-        and maintaining a yoga practice, cold exposures & sauna. Staying
-        informed about the latest in technology is a passion, and I enjoy
-        connecting with friends. Setting up{' '}
+        cold exposures & sauna. Staying informed about the latest in technology
+        is a passion, and I enjoy connecting with friends. Setting up{' '}
         <span className='font-medium'>
-          Arch Linux & DWM, exploring gadgets, hardware
+          Arch Linux & DWM, exploring gadgets, hardware, bug bounty, network
+          engineering.{' '}
         </span>
-        and continuous learning are part of my daily routine. I&apos;m
-        particularly excited about learning new technologies like
-        <span className='font-medium'>
-          Rust, WebAssembly, Bun, and MongoDB.
-        </span>{' '}
-        My current studying involves Node.js, MongoDB, GraphQL.
+        <span className='font-medium'></span>{' '}
       </p>
     </motion.section>
   );

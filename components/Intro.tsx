@@ -63,12 +63,12 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className='font-bold'>Hello & Welcome! I&apos;m Ihar</span> a
-        highly motivated <span className='font-bold'>full-stack developer</span>{' '}
+        highly motivated <span className='font-bold'>software engineer</span>{' '}
         with a year of valuable experience.{' '}
         <span className='font-bold'>Building </span>websites & apps is not just
-        a job for me, <span className='italic'>it&apos;s a passion</span>. My
-        expertise centers on React & <span className='underline '>Next.js</span>
-        .
+        a job for me, <span className='italic'>it&apos;s a passion</span>.
+        Currently I&apos;m focus on JavaScript &{' '}
+        <span className='underline '>Express.js</span>.
       </motion.h1>
 
       <motion.div
@@ -98,7 +98,7 @@ const Intro = () => {
           className='group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 
           hover:scale-110 active:scale-105
           transition cursor-pointer border borderBlack dark:bg-white/10'
-          href='/IharBahamazCV.pdf'
+          href='/Ihar_Bahamaz_CV.pdf'
           download
         >
           Download CV{' '}
