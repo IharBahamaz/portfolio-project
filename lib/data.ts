@@ -148,6 +148,8 @@ export const skillsData = [
   'CSS',
   'JavaScript',
   'TypeScript',
+  'Rust',
+  'BurpSuit',
   'React',
   'Next.js',
   'Node.js',
