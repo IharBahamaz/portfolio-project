@@ -18,7 +18,7 @@ const Intro = () => {
     <section
       ref={ref}
       id='home'
-      className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
+      className='mb-28   max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'
     >
       <div className='flex items-center justify-center'>
         <div className='relative'>
@@ -58,7 +58,7 @@ const Intro = () => {
       </div>
 
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className='mb-7 mt-1 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -67,7 +67,7 @@ const Intro = () => {
         with a year of valuable experience.{' '}
         <span className='font-bold'>Building </span>websites & apps is not just
         a job for me, <span className='italic'>it&apos;s a passion</span>.
-        Currently I&apos;m focus on JavaScript &{' '}
+        Currently I&apos;m focus on JavaScript, Rust &{' '}
         <span className='underline '>Express.js</span>.
       </motion.h1>
 
