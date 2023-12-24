@@ -68,7 +68,7 @@ const Intro = () => {
         <span className='font-bold'>Building </span>websites & apps is not just
         a job for me, <span className='italic'>it&apos;s a passion</span>.
         Currently I&apos;m focus on JavaScript, Rust &{' '}
-        <span className='underline '>Express.js</span>.
+        <span className='underline '>Full Stack Dev</span>.
       </motion.h1>
 
       <motion.div
