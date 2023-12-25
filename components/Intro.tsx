@@ -67,7 +67,7 @@ const Intro = () => {
         with a year of valuable experience.{' '}
         <span className='font-bold'>Building </span>websites & apps is not just
         a job for me, <span className='italic'>it&apos;s a passion</span>.
-        Currently I&apos;m focus on JavaScript, Rust &{' '}
+        Currently I&apos;m focus on JavaScript, Rust &<br />
         <span className='underline '>Full Stack Dev</span>.
       </motion.h1>
 
